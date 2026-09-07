@@ -1,0 +1,29 @@
+﻿<Window x:Class="DUO52.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DUO52"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Логин" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
+        <TextBlock Text="Пароль" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <PasswordBox Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Авторизация" Name="Authorization" Click="Authorization_Click" Width="120" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"/>
+        <Button Content="Регистрация" Name="Registration" Click="Registration_Click" Width="120" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"/>
+        <Button Content="Импортировать" Name="Import" Click="Import_Click" Width="120" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"/>
+        <Button Content="Экспортировать" Name="Export" Click="Export_Click" Width="120" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20"/>
+    </Grid>
+</Window>
