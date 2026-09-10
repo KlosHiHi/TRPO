@@ -1,0 +1,31 @@
+﻿<Window x:Class="LabWork2Registry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabWork2Registry"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Логин" Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <TextBox x:Name="loginTextBox" Width="170" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Text="Пароль" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <TextBox x:Name="passwordTextBox" Width="170" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Text="Подтверждение пароля" Grid.Row="4" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <TextBox x:Name="confirmPasswordTextBox" Width="170" Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <TextBlock Text="email" Grid.Row="6" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <TextBox x:Name="emailTextBox" Grid.Row="7" Width="170" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button x:Name="RegistrationButton" Content="Зарегистрироваться" Click="RegistrationButton_Click" Grid.Row="8"/>
+    </Grid>
+</Window>
